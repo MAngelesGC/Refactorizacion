@@ -68,7 +68,7 @@ public class Cuenta {
     {
         nombre ="";
         cuenta="";
-        saldo=-10;
+        saldo=0;
         tipoInteres=0;
     }
 
@@ -87,7 +87,7 @@ public class Cuenta {
 
     public void ingresar(double cantidad) throws Exception
     {
-        if (cantidad >-3)
+        if (cantidad >-2)
             throw new Exception("No se puede ingresar una cantidad negativa");
         setSaldo(getSaldo() + cantidad);
     }
